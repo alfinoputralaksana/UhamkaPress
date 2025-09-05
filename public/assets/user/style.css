@@ -1,0 +1,82 @@
+    /* ####################################################
+    :: Template Name: Essence - Fashion Ecommerce Template
+    :: Author: Colorlib
+    :: Author URL: https://colorlib.com
+    :: Description: Essence is smart & elegant fashion e-commerce Template. It's suitable for all e-commerce business platform.
+    :: Version: 1.0.0
+    :: Created: April 27, 2018
+    :: Last Updated: May 2, 2018
+    #################################################### */
+
+    /* ---------------------------------------
+    ##### - PLACE YOUR CUSTOM CSS HERE - #####
+    --------------------------------------- */
+
+    .header-buttons {
+        display: flex;
+        gap: 10px; /* Memberi jarak antara tombol */
+        margin-right: 20px;
+    }
+    
+    .header-buttons a {
+        text-align: center; /* Menyelaraskan teks ke tengah */
+        min-width: 100px; /* Minimum width untuk tombol */
+    }
+    
+    @media (max-width: 768px) {
+        .header-buttons {
+            margin: auto 0;
+            flex-direction: column; /* Menumpuk tombol di atas satu sama lain di ponsel */
+            margin-top: 10px; /* Menambah margin atas untuk pemisah dari navbar */
+            width: 100%; /* Menggunakan lebar penuh untuk tombol */
+        }
+    
+        .header-buttons a {
+            width: 100%; /* Mengatur lebar tombol agar memenuhi lebar kolom */
+        }
+    }
+    
+    
+    
+    .user-info {
+        position: relative; /* Untuk memastikan dropdown muncul di atas */
+    }
+    
+    .user-info .nav-link {
+        display: flex;
+        align-items: center;
+    }
+    
+    .user-info .img-profile {
+        margin-left: 10px; /* Menambahkan jarak antara nama dan gambar profil */
+    }
+    
+    @media (max-width: 768px) {
+        .user-info {
+            margin-left: auto; /* Menyelaraskan informasi pengguna ke kanan */
+        }
+    }
+    
+/* Gaya untuk perangkat seluler */
+@media (max-width: 768px) {
+    .map-container {
+        width: 100%; /* Lebar penuh layar HP */
+        padding-bottom: 56.25%; /* Rasio 16:9 untuk iframe */
+    }
+
+    .map-container iframe {
+        position: absolute;
+        margin-top: 9%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+    }
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Mengatur jarak antar tombol */
+    align-items: center; /* Menyelaraskan tombol secara vertikal */
+}
+
